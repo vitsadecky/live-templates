@@ -1,0 +1,536 @@
+<templateSet group="PHP">
+  <template name="fore" value="foreach ($ITERABLE$ as $$$VAR_VALUE$) {&#10;    $END$&#10;}&#10;" description="foreach(iterable_expr as $value) {...}" toReformat="true" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="forek" value="foreach ($ITERABLE$ as $$$VAR_KEY$ =&gt; $$$VAR_VALUE$) {&#10;    $END$&#10;}&#10;" description="foreach(iterable_expr as $key =&gt; $value) {...}" toReformat="true" toShortenFQNames="true">
+    <variable name="ITERABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR_KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="rqr" value="require &quot;$END$&quot;;" description="'require' statement" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="false" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP Interface Member" value="false" />
+      <option name="PHP Trait Member" value="false" />
+    </context>
+  </template>
+  <template name="rqro" value="require_once &quot;$END$&quot;;" description="'require_once' statement" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="false" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP Interface Member" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="PHP Trait Member" value="false" />
+    </context>
+  </template>
+  <template name="inc" value="include &quot;$END$&quot;;" description="'include' statement" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+  <template name="inco" value="include_once &quot;$END$&quot;;" description="'include_once' statement" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+  <template name="pubf" value="public function $NAME$($PARAMETERS$){&#10;    $END$&#10;}" description="public function" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Trait Member" value="false" />
+    </context>
+  </template>
+  <template name="pubsf" value="public static function $NAME$($PARAMETERS$){&#10;    $END$&#10;}" description="public static function" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Trait Member" value="false" />
+    </context>
+  </template>
+  <template name="prof" value="protected function $NAME$($PARAMETERS$){&#10;    $END$&#10;}" description="protected function" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Trait Member" value="false" />
+    </context>
+  </template>
+  <template name="prosf" value="protected static function $NAME$($PARAMETERS$){&#10;    $END$&#10;}" description="protected static function" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Trait Member" value="false" />
+    </context>
+  </template>
+  <template name="prif" value="private function $NAME$($PARAMETERS$){&#10;    $END$&#10;}" description="private function" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Trait Member" value="false" />
+    </context>
+  </template>
+  <template name="prisf" value="private static function $NAME$($PARAMETERS$){&#10;    $END$&#10;}" description="private static function" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Trait Member" value="false" />
+    </context>
+  </template>
+  <template name="orm_id" value="/**&#10; * @ORM\Column(type=&quot;integer&quot;)&#10; * @ORM\Id&#10; * @ORM\GeneratedValue(strategy=&quot;AUTO&quot;)&#10; */&#10;private int $id;&#10;&#10;public function getId(): int&#10;{&#10;    return $this-&gt;id;&#10;}" description="Creates id column" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="orm_M1" value="/**&#10; * @ORM\ManyToOne(targetEntity=&quot;$targetEntity$&quot;)&#10; * @ORM\JoinColumn(referencedColumnName=&quot;id&quot;)&#10; */&#10;private $$$name$;&#10;&#10;public function get$Name$(): $class$&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="targetEntity" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="Name" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="float:nullable" value="/**&#10; * @ORM\Column(type=&quot;float&quot;, nullable=true)&#10; */&#10;private ?float $$$name$;&#10;&#10;public function get$Name$(): float&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Name" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="orm_entity_gedmo" value="use Doctrine\ORM\Mapping as ORM;&#10;use Gedmo\Mapping\Annotation as Gedmo;&#10;&#10;/**&#10; * @ORM\Table()&#10; * @ORM\Entity&#10; */" description="Creates default definition for orm entity" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="d" value="dump($expression$);$END$" description="Dump" toReformat="true" toShortenFQNames="true">
+    <variable name="expression" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if ($condition$) {&#10;    $END$&#10;}&#10;" description="Simple if" toReformat="true" toShortenFQNames="true">
+    <variable name="condition" expression="&quot;expression&quot;" defaultValue="&quot;condition&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="ife" value="if ($condition$) {&#10;    $END$&#10;} else {&#10;}&#10;" description="Simple if/else" toReformat="true" toShortenFQNames="true">
+    <variable name="condition" expression="&quot;expression&quot;" defaultValue="&quot;condition&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="swt" value="switch ($expression$) {&#10;    case $value1$:&#10;        $END$&#10;        break;&#10;    default:&#10;}&#10;" description="Switch/case/default" toReformat="true" toShortenFQNames="true">
+    <variable name="expression" expression="" defaultValue="&quot;expression&quot;" alwaysStopAt="true" />
+    <variable name="value1" expression="" defaultValue="&quot;value1&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="qts" value="'$SELECTION$'$END$" description="Single quotes" toReformat="true" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="dqts" value="&quot;$SELECTION$&quot;$END$" description="Double quotes" toReformat="true" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="tm" value="public function test$UCFmethod$(): void&#10;{&#10;    $END$&#10;}&#10;" description="PHPUnit test skeleton" toReformat="true" toShortenFQNames="true">
+    <variable name="UCFmethod" expression="capitalize(method)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="tsup" value="protected function setUp(): void&#10;{&#10;    parent::setUp();&#10;    $END$&#10;}&#10;" description="PHPUnit setUp" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="ttrd" value="&#10;protected function tearDown(): void&#10;{&#10;    $END$&#10;    parent::tearDown();&#10;}&#10;" description="PHPUnit tearDown" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="ttrdac" value="public static function tearDownAfterClass(): void&#10;{&#10;    $END$&#10;}&#10;" description="PHPUnit tearDownAfterClass" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="tsupbc" value="public static function setUpBeforeClass(): void&#10;{&#10;    $END$&#10;}&#10;" description="PHPUnit setUpBeforeClass" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="tmdp" value="/**&#10; * @dataProvider $dataProvider$&#10; */&#10;public function test$UCFmethod$($arg1$)&#10;{&#10;    $END$&#10;}&#10;" description="PHPUnit test skeleton with data provider" toReformat="true" toShortenFQNames="true">
+    <variable name="dataProvider" expression="" defaultValue="&quot;data provider function&quot;" alwaysStopAt="true" />
+    <variable name="UCFmethod" expression="capitalize(method)" defaultValue="" alwaysStopAt="false" />
+    <variable name="arg1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="tmex" value="public function test$UCFmethod$(): void&#10;{&#10;    $this-&gt;expectException($EXCEPTION$);&#10;    $this-&gt;expectExceptionMessage($EXCEPTION_MSG$);&#10;    &#10;    $END$&#10;}&#10;" description="PHPUnit test skeleton with expected exception" toReformat="true" toShortenFQNames="true">
+    <variable name="UCFmethod" expression="capitalize(method)" defaultValue="" alwaysStopAt="false" />
+    <variable name="EXCEPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXCEPTION_MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="bool:default" value="/**&#10; * @ORM\Column(type=&quot;boolean&quot;, options={&quot;default&quot;: $default$})&#10; */&#10;private bool $$$name$ = $default$;&#10;&#10;$END$&#10;&#10;public function is$method$(): bool&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="boolean column" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="default" expression="enum(&quot;false&quot;, &quot;true&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="bool:nullable" value="/**&#10; * @ORM\Column(type=&quot;boolean&quot;, nullable=true)&#10; */&#10;private ?bool $$$name$ = null;&#10;&#10;$END$&#10;&#10;public function is$method$(): ?bool&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="boolean column" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="bool:requred" value="/**&#10; * @ORM\Column(type=&quot;boolean&quot;)&#10; */&#10;private ?bool $$$name$ = null;&#10;&#10;$END$&#10;&#10;public function is$method$(): ?bool&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="boolean column" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="date:default" value="/**&#10; * @ORM\Column(type=&quot;$type$_immutable&quot;)&#10; */&#10;private \DateTimeImmutable $$$name$;&#10;&#10;$END$&#10;&#10;public function get$method$(): \DateTimeImmutable&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="date/time column" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="enum(&quot;datetime&quot;, &quot;date&quot;, &quot;time&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="date:nullable" value="/**&#10; * @ORM\Column(type=&quot;$type$_immutable&quot;, nullable=true)&#10; */&#10;private ?\DateTimeImmutable $$$name$ = null;&#10;&#10;$END$&#10;&#10;public function get$method$(): ?\DateTimeImmutable&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="date/time column" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="enum(&quot;datetime&quot;, &quot;date&quot;, &quot;time&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="date:required" value="/**&#10; * @ORM\Column(type=&quot;$type$_immutable&quot;)&#10; */&#10;private ?\DateTimeImmutable $$$name$ = null;&#10;&#10;$END$&#10;&#10;public function get$method$(): ?\DateTimeImmutable&#10;{&#10;    return $this-&gt;$name$;&#10;}&#10;&#10;public function set$method$(?\DateTimeImmutable $$$name$): void&#10;{&#10;    $this-&gt;$name$ = $$$name$;&#10;}" description="date/time column" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="enum(&quot;datetime&quot;, &quot;date&quot;, &quot;time&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="entity" value="&#10;use Doctrine\ORM\Mapping as ORM;&#10;&#10;/**&#10; * @ORM\Table()&#10; * @ORM\Entity()&#10; **/" description="Creates default definition for orm entity" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="int:default" value="/**&#10; * @ORM\Column(type=&quot;integer&quot;, options={&quot;default&quot;: $default$})&#10; */&#10;private int $$$name$ = $default$;&#10;&#10;$END$&#10;&#10;public function get$method$(): int&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="integer column" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="default" expression="enum(&quot;0&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="int:nullable" value="/**&#10; * @ORM\Column(type=&quot;integer&quot;, nullable=true)&#10; */&#10;private ?int $$$name$ = null;&#10;&#10;$END$&#10;&#10;public function get$method$(): ?int&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="integer column" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="int:required" value="/**&#10; * @ORM\Column(type=&quot;integer&quot;)&#10; */&#10;private ?int $$$name$ = null;&#10;&#10;$END$&#10;&#10;public function get$method$(): ?int&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="integer column" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="orm_1M" value="/**&#10; * @var Collection|$Class$[]&#10; * @ORM\OneToMany(targetEntity=$Class$::class, mappedBy=&quot;$backProp$&quot;, cascade={&quot;ALL&quot;}, orphanRemoval=true)&#10; */&#10;private Collection $$$var$s;&#10;&#10;public function __construct()&#10;{&#10;    $this-&gt;$var$s = new ArrayCollection();&#10;}&#10;&#10;/**&#10; * @return $Class$[]&#10; */&#10;public function get$MethodName$s(): array&#10;{&#10;    return $this-&gt;$var$s-&gt;toArray();&#10;}&#10;&#10;public function add$MethodName$($Class$ $$$var$): bool&#10;{&#10;    if ($this-&gt;$var$s-&gt;contains($$$var$)) {&#10;        return false;&#10;    }&#10;    &#10;    if (!$this-&gt;$var$s-&gt;add($$$var$)) {&#10;        return false;&#10;    }&#10;    &#10;    $$$var$-&gt;set$backMeth$($$this);&#10;    return true;&#10;}&#10;&#10;public function remove$MethodName$($Class$ $$$var$): bool&#10;{&#10;    if (!$this-&gt;$var$s-&gt;removeElement($$$var$)) {&#10;        return false;&#10;    }&#10;&#10;    if ($$$var$-&gt;get$backMeth$() === $this) {&#10;        $$$var$-&gt;set$backMeth$(null);&#10;    }&#10;    &#10;    return true;&#10;}" description="adder remover getter" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MethodName" expression="capitalize(var)" defaultValue="" alwaysStopAt="false" />
+    <variable name="Class" expression="capitalize(var)" defaultValue="" alwaysStopAt="true" />
+    <variable name="backMeth" expression="phpClassName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="backProp" expression="decapitalize(backMeth)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="str:default" value="/**&#10; * @ORM\Column(type=&quot;string&quot;, length=50, options={&quot;default&quot;: &quot;$default$&quot;})&#10; */&#10;private string $$$name$ = &quot;$default$&quot;;&#10;&#10;$END$&#10;&#10;public function get$method$(): string&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="string column" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <variable name="default" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="str:nullable" value="/**&#10; * @ORM\Column(type=&quot;string&quot;, length=50, nullable=true)&#10; */&#10;private ?string $$$name$ = null;&#10;&#10;$END$&#10;&#10;public function get$method$(): ?string&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="string column" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="str:required" value="/**&#10; * @ORM\Column(type=&quot;string&quot;, length=50)&#10; */&#10;private ?string $$$name$ = null;&#10;&#10;$END$&#10;&#10;public function get$method$(): ?string&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="string column" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="text:nullable" value="/**&#10; * @ORM\Column(type=&quot;text&quot;, nullable=true)&#10; */&#10;private ?string $$$name$ = null;&#10;&#10;$END$&#10;&#10;public function get$method$(): ?string&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="text column" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="fpc" value="file_put_contents($PATH$, $CONTENT$);" description="File put contents" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="false" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP Expression" value="false" />
+      <option name="PHP Interface Member" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="PHP Trait Member" value="false" />
+    </context>
+  </template>
+  <template name="fpca" value="file_put_contents($PATH$, $CONTENT$, FILE_APPEND);" description="file put contents - append" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Class Member" value="false" />
+      <option name="PHP Comment" value="false" />
+      <option name="PHP Expression" value="false" />
+      <option name="PHP Interface Member" value="false" />
+      <option name="PHP String Literal" value="false" />
+      <option name="PHP Trait Member" value="false" />
+    </context>
+  </template>
+  <template name="prcon" value="private function __construct($PARAMETERS$){&#10;$END$        &#10;}" description="private constructor" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="float:requred" value="/**&#10; * @ORM\Column(type=&quot;float&quot;)&#10; */&#10;private $$$name$;&#10;&#10;public function get$Name$(): float&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="float:default" value="/**&#10; * @ORM\Column(type=&quot;float&quot;, options={&quot;default&quot;: $default$})&#10; */&#10;private float $$$name$ = $default$;&#10;&#10;$END$&#10;&#10;public function get$method$(): float&#10;{&#10;    return $this-&gt;$name$;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="default" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="pucon" value="public function __construct($PARAMETERS$){&#10;$END$        &#10;}" description="public constructor" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAMETERS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="dd" value="dump($expression$);&#10;die;$END$" description="Dump &amp;&amp; die" toReformat="false" toShortenFQNames="true">
+    <variable name="expression" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="mch" value="$RESULT$ = match ($VAR$) {&#10;    $ITEM$ =&gt; $VAL$,&#10;    $ITEM2$ =&gt; $VAL2$,&#10;    $ITEM3$ =&gt; $VAL3$,&#10;};" description="match" toReformat="false" toShortenFQNames="true">
+    <variable name="RESULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="mchd" value="$RESULT$ = match ($VAR$) {&#10;    $ITEM$ =&gt; $VAL$,&#10;    $ITEM2$ =&gt; $VAL2$,&#10;    $ITEM3$ =&gt; $VAL3$,&#10;    default =&gt; $DEFAULT$,&#10;};" description="match with default" toReformat="false" toShortenFQNames="true">
+    <variable name="RESULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="amaps" value="array_map(fn ($TYPE$ $ITEM$) =&gt; $VALUE$, $ITEMS$);&#10;$END$" description="array_map (shorted)" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="amap" value="array_map(&#10;    function ($TYPE$ $PARAM$): $RETURN$ {&#10;        $END$&#10;    },&#10;    $ITEMS$&#10;);" description="array map" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="route" value="use Symfony\Component\Routing\Annotation\Route;&#10;&#10;#[Route(&quot;$EDNPOINT$&quot;, name=$NAME$, methods: [&quot;$METHOD$&quot;])]" description="Symfony route annotation" toReformat="false" toShortenFQNames="true">
+    <variable name="EDNPOINT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+</templateSet>

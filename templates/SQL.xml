@@ -1,0 +1,136 @@
+<templateSet group="SQL">
+  <template name="sela" value="SELECT * FROM $table$ $alias$ WHERE $alias$.$END$;" description="select * from table with alias" toReformat="true" toShortenFQNames="false">
+    <variable name="table" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="alias" expression="complete()" defaultValue="&quot;alias&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="ins" value="INSERT INTO $table$ ($columns$) VALUES ($END$);" description="insert into table values" toReformat="true" toShortenFQNames="false">
+    <variable name="table" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="columns" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="true" />
+      <option name="SQL_STATEMENT_MONGO" value="true" />
+    </context>
+  </template>
+  <template name="selc" value="SELECT COUNT(*) FROM $table$ $alias$ WHERE $alias$.$END$;" description="select count(*) from table with alias" toReformat="true" toShortenFQNames="false">
+    <variable name="table" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="alias" expression="complete()" defaultValue="&quot;alias&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="tab" value="CREATE TABLE $table$ (&#10;  $col$ $type$ $null$$END$&#10;);" description="create table (column)" toReformat="true" toShortenFQNames="false">
+    <variable name="table" expression="" defaultValue="&quot;new_table&quot;" alwaysStopAt="true" />
+    <variable name="col" expression="" defaultValue="&quot;col&quot;" alwaysStopAt="true" />
+    <variable name="type" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true" />
+    <variable name="null" expression="" defaultValue="&quot;not null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="col" value="$col$ $type$ $null$$END$" description="column definition" toReformat="true" toShortenFQNames="false">
+    <variable name="col" expression="" defaultValue="&quot;col&quot;" alwaysStopAt="true" />
+    <variable name="type" expression="" defaultValue="&quot;int&quot;" alwaysStopAt="true" />
+    <variable name="null" expression="" defaultValue="&quot;not null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="upd" value="UPDATE $table_name$ SET $col$ = $value$ WHERE $END$;" description="update table set column value" toReformat="true" toShortenFQNames="false">
+    <variable name="table_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="col" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="true" />
+      <option name="SQL_STATEMENT_CLICKHOUSE" value="true" />
+    </context>
+  </template>
+  <template name="sel" value="SELECT * FROM $table$$END$;" description="select all rows from a table" toReformat="true" toShortenFQNames="false">
+    <variable name="table" expression="dbObjectName()" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="selw" value="SELECT * FROM $table$ $alias$ WHERE $alias$.$END$;" description="select specific rows from a table" toReformat="true" toShortenFQNames="false">
+    <variable name="table" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="alias" expression="complete()" defaultValue="&quot;alias&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="lim" value="SELECT * FROM $table$ LIMIT $size$$END$;" description="select first N rows from a table" toReformat="true" toShortenFQNames="false">
+    <variable name="table" expression="dbObjectName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="size" expression="" defaultValue="100" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="top" value="SELECT TOP $size$ * FROM $table$$END$;" description="select first N rows from a table" toReformat="true" toShortenFQNames="false">
+    <variable name="table" expression="dbObjectName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="size" expression="" defaultValue="100" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="first" value="SELECT * FROM $table$ FETCH FIRST $size$ ROWS ONLY $END$;" description="select first N rows from a table" toReformat="true" toShortenFQNames="false">
+    <variable name="table" expression="dbObjectName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="size" expression="" defaultValue="100" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="toprow" value="SELECT * FROM $table$ WHERE rownum &lt;= $size$$END$;" description="select first N rows from a table" toReformat="true" toShortenFQNames="false">
+    <variable name="table" expression="dbObjectName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="size" expression="" defaultValue="100" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="del" value="DELETE FROM $table$ WHERE $END$;" description="delete rows from a table" toReformat="true" toShortenFQNames="false">
+    <variable name="table" expression="dbObjectName()" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="view" value="CREATE VIEW $view$ AS SELECT * FROM $table$ $END$;" description="new view definition" toReformat="true" toShortenFQNames="false">
+    <variable name="view" expression="" defaultValue="&quot;new_view&quot;" alwaysStopAt="true" />
+    <variable name="table" expression="dbOsbjectName()" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="delAll" value="DELETE FROM $table$ WHERE 1=1;" description="delete all" toReformat="false" toShortenFQNames="true">
+    <variable name="table" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="trc" value="TRUNCATE $table$" description="truncate table" toReformat="false" toShortenFQNames="true">
+    <variable name="table" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+</templateSet>
